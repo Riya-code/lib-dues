@@ -1,8 +1,9 @@
 <html>
+  
   <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Read, Write, Update, Delete</title>
+    <title>Library Dues</title>
   </head>
   <body>
     <div id="container">
@@ -11,15 +12,15 @@
         <span id="content">
           <h2 class="typedtext"></h2>
         </span>
-        <h2 id="sub_header"> with Firebase Database </h2>
+        <h3 id="sub_header"> Student Database </h3>
       </div>
 
       <div id="form_container">
-        <input placeholder="Email" type="email" id="email"/>
-        <input placeholder="Password" type="password" id="password"/>
-        <input placeholder="Username" type="name" id="username"/>
+        <input placeholder="Enter your Email" type="email" id="email"/>
+        <input placeholder="Enter Username" type="name" id="username"/>
+        <h5>Select Issue & Return Date</h5>
         <input placeholder="Say Something" type="date" id="say_something"/>
-        <input placeholder="Say Something2" type="date" id="say_something2"/>
+        <input type="date" id="say_something2"/>
         
       </div>
 
@@ -41,7 +42,7 @@
       justify-content: center;
       align-items: center;
     }
-
+    
     #container {
       width: 60%;
       height: 400px;
@@ -175,7 +176,7 @@
   </style>
   <script>
     function typingEffect() {
-      const contactTexts = shuffleArray(['Read', 'Write', 'Update', 'Delete']);
+      const contactTexts = shuffleArray(['B.I.T', 'Library']);
       const typedtext = document.getElementsByClassName("typedtext")[0];
       let removing = false;
       let idx = char = 0;
@@ -233,5 +234,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
   <script src="index.js"></script>
+   
     
   </html>
