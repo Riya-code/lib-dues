@@ -15,7 +15,6 @@ var database = firebase.database()
 
 function save() {
   var email = document.getElementById('email').value
-  var password = document.getElementById('password').value
   var username = document.getElementById('username').value
   var day1 = document.getElementById('say_something').value
   var day2 = document.getElementById('say_something2').value
@@ -23,7 +22,6 @@ function save() {
 
   database.ref('users/' + username).set({
     email : email,
-    password : password,
     username : username,
     d1 : day1,
     d2 : day2
