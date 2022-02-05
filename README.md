@@ -1,3 +1,3 @@
 # library-due-record
 Calculates library dues of college library with the help of student database.
-https://riya-code.github.io/library-dues
+https://riya-code.github.io/lib-dues
